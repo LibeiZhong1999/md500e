@@ -1,0 +1,416 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="E:\MD500E_C\CCs_28035\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\01_system\DSP2803x_CodeStartBranch.asm"
+Source="..\01_system\DSP2803x_CpuTimers.c"
+Source="..\01_system\DSP2803x_GlobalVariableDefs.c"
+Source="..\01_system\DSP280x_CSMPasswords.asm"
+Source="..\01_system\main.c"
+Source="..\01_system\mainInit_2803x.c"
+Source="..\02_motor\encoder\MotorEncoder.c"
+Source="..\02_motor\encoder\MotorSpeed.c"
+Source="..\02_motor\main_public\MotorCarrier.c"
+Source="..\02_motor\main_public\MotorConstant.c"
+Source="..\02_motor\main_public\MotorCurrentTransform.c"
+Source="..\02_motor\main_public\MotorDataExchange.c"
+Source="..\02_motor\main_public\MotorDebug.c"
+Source="..\02_motor\main_public\MotorFlyingStart.c"
+Source="..\02_motor\main_public\MotorInfoCollect.c"
+Source="..\02_motor\main_public\MotorInvProtect.c"
+Source="..\02_motor\main_public\MotorMain.c"
+Source="..\02_motor\main_public\MotorParChange.c"
+Source="..\02_motor\main_public\MotorPublicCal.c"
+Source="..\02_motor\main_public\MotorVar.c"
+Source="..\02_motor\para_estimation\MotorParEst.c"
+Source="..\02_motor\para_estimation\MotorPmsmParEst.c"
+Source="..\02_motor\PMFluxWeakCsr2.c"
+Source="..\02_motor\pwm\MotorPWM.c"
+Source="..\02_motor\pwm\Svpwm1.c"
+Source="..\02_motor\vc\MotorPmsmMain.c"
+Source="..\02_motor\vc\MotorVCMain.c"
+Source="..\02_motor\vc\PM_svc\MotorIPMSVC.c"
+Source="..\02_motor\vf\MotorVF.c"
+Source="..\04_subprogram\ASMSubPrg.asm"
+Source="..\04_subprogram\SubPrg.c"
+Source="..\05_public\28035_header\DSP2803x_Adc.h"
+Source="..\05_public\28035_header\DSP2803x_BootVars.h"
+Source="..\05_public\28035_header\DSP2803x_Cla.h"
+Source="..\05_public\28035_header\DSP2803x_Comp.h"
+Source="..\05_public\28035_header\DSP2803x_CpuTimers.h"
+Source="..\05_public\28035_header\DSP2803x_DevEmu.h"
+Source="..\05_public\28035_header\DSP2803x_Device.h"
+Source="..\05_public\28035_header\DSP2803x_ECan.h"
+Source="..\05_public\28035_header\DSP2803x_ECap.h"
+Source="..\05_public\28035_header\DSP2803x_EPwm.h"
+Source="..\05_public\28035_header\DSP2803x_EPwm_defines.h"
+Source="..\05_public\28035_header\DSP2803x_EQep.h"
+Source="..\05_public\28035_header\DSP2803x_Gpio.h"
+Source="..\05_public\28035_header\DSP2803x_I2c.h"
+Source="..\05_public\28035_header\DSP2803x_Lin.h"
+Source="..\05_public\28035_header\DSP2803x_NmiIntrupt.h"
+Source="..\05_public\28035_header\DSP2803x_PieCtrl.h"
+Source="..\05_public\28035_header\DSP2803x_PieVect.h"
+Source="..\05_public\28035_header\DSP2803x_Sci.h"
+Source="..\05_public\28035_header\DSP2803x_Spi.h"
+Source="..\05_public\28035_header\DSP2803x_SysCtrl.h"
+Source="..\05_public\28035_header\DSP2803x_XIntrupt.h"
+Source="..\05_public\28035_header\IQmathLib.h"
+Source="..\05_public\28035_header\SystemDefine.h"
+Source="..\05_public\motor_header\MotorCurrentTransform.h"
+Source="..\05_public\motor_header\MotorDataExchange.h"
+Source="..\05_public\motor_header\MotorDefine.h"
+Source="..\05_public\motor_header\MotorEncoder.h"
+Source="..\05_public\motor_header\MotorInclude.h"
+Source="..\05_public\motor_header\MotorInfoCollectInclude.h"
+Source="..\05_public\motor_header\MotorInvProtectInclude.h"
+Source="..\05_public\motor_header\MotorParaIDinclude.h"
+Source="..\05_public\motor_header\MotorPmsmMain.h"
+Source="..\05_public\motor_header\MotorPmsmParEst.h"
+Source="..\05_public\motor_header\MotorPublicCalInclude.h"
+Source="..\05_public\motor_header\MotorPwmInclude.h"
+Source="..\05_public\motor_header\MotorSpeedCheceInclude.h"
+Source="..\05_public\motor_header\MotorStructDefine.h"
+Source="..\05_public\motor_header\MotorSvcInclude.h"
+Source="..\05_public\motor_header\MotorVCInclude.h"
+Source="..\05_public\motor_header\MotorVFInclude.h"
+Source="..\05_public\motor_header\SubPrgInclude.h"
+Source="..\05_public\obj\MD500_func_obj_28034\DSP2803x_usDelay.obj"
+Source="..\func\src\f_canlink.c"
+Source="..\func\src\f_CANlinkEx.c"
+Source="..\func\src\f_comm.c"
+Source="..\func\src\f_common.c"
+Source="..\func\src\f_dspcan.c"
+Source="..\func\src\f_eeprom.c"
+Source="..\func\src\f_error.c"
+Source="..\func\src\f_fcDeal.c"
+Source="..\func\src\f_frqSrc.c"
+Source="..\func\src\f_frqSrc_pid.c"
+Source="..\func\src\f_funcCode.c"
+Source="..\func\src\f_interface.c"
+Source="..\func\src\f_invPara.c"
+Source="..\func\src\f_io.c"
+Source="..\func\src\f_main.c"
+Source="..\func\src\f_menu.c"
+Source="..\func\src\f_modbus.c"
+Source="..\func\src\f_motorFc.c"
+Source="..\func\src\f_osc.c"
+Source="..\func\src\f_p2p.c"
+Source="..\func\src\f_plc.c"
+Source="..\func\src\f_runSrc.c"
+Source="..\func\src\f_runSrc_accDecFrq.c"
+Source="..\func\src\f_torqueCtrl.c"
+Source="..\func\src\f_ui.c"
+Source="..\func\src\f_vf.c"
+Source="..\include_ti\2803x\DSP2803x_GlobalPrototypes.h"
+Source="Debug\MD500E_C_F061M157F.map"
+Source="..\05_public\common\DSP28035Peripheral.cmd"
+Source="..\05_public\common\F28035.cmd"
+
+["Debug" Settings]
+FinalBuildCmd=hex2000 -romwidth 16 -memwidth 16 -i -o .\Debug\MD500E_C_F061M157F.hex .\Debug\MD500E_C_F061M157F.out
+
+["Compiler" Settings: "Debug"]
+Options=-q -o1 -fr"$(Proj_dir)\..\05_public\obj\MD500E_28035_motor_obj" -i"$(Proj_dir)\..\05_public\28035_header" -i"$(Proj_dir)\..\func\src\include" -i"$(Proj_dir)\..\include_ti\280x" -i"$(Proj_dir)\..\func\src_ti_main" -i"$(Proj_dir)\..\include_ti\2803x" -i"$(Proj_dir)\..\05_public\motor_header" -i"$(Proj_dir)\..\func\include" -i"$(Proj_dir)\..\05_public\function_header" -d"_DEBUG" -d"CHIP_2808L" -d"LARGE_MODEL" -d"DSP2803X" -ml -mt -v28
+
+["Compiler" Settings: "Release"]
+Options=-pdsw225 -o3 -fr"$(Proj_dir)\Release" -d"LARGE_MODEL" -ml -v28
+
+["Linker" Settings: "Debug"]
+Options=-q -c -ecode_start -m".\Debug\MD500E_C_F061M157F.map" -o".\Debug\MD500E_C_F061M157F.out" -stack0x400 -w -x -l"rts2800_ml.lib"
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\380_28035.map" -o".\Release\380_28035.out" -w -x
+
+["..\05_public\28035_header\DSP2803x_Adc.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Adc.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_BootVars.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_BootVars.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Cla.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Cla.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Comp.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Comp.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_CpuTimers.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_CpuTimers.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_DevEmu.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_DevEmu.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Device.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Device.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_ECan.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_ECan.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_ECap.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_ECap.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_EPwm.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_EPwm.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_EPwm_defines.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_EPwm_defines.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_EQep.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_EQep.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Gpio.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Gpio.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_I2c.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_I2c.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Lin.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Lin.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_NmiIntrupt.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_NmiIntrupt.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_PieCtrl.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_PieCtrl.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_PieVect.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_PieVect.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Sci.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Sci.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Spi.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_Spi.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_SysCtrl.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_SysCtrl.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_XIntrupt.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\DSP2803x_XIntrupt.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\IQmathLib.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\IQmathLib.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\SystemDefine.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\28035_header\SystemDefine.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorCurrentTransform.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorCurrentTransform.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorDataExchange.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorDataExchange.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorDefine.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorDefine.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorEncoder.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorEncoder.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorInclude.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorInclude.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorInfoCollectInclude.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorInfoCollectInclude.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorInvProtectInclude.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorInvProtectInclude.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorParaIDinclude.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorParaIDinclude.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorPmsmMain.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorPmsmMain.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorPmsmParEst.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorPmsmParEst.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorPublicCalInclude.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorPublicCalInclude.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorPwmInclude.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorPwmInclude.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorSpeedCheceInclude.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorSpeedCheceInclude.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorStructDefine.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorStructDefine.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorSvcInclude.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorSvcInclude.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorVCInclude.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorVCInclude.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorVFInclude.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\MotorVFInclude.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\SubPrgInclude.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\05_public\motor_header\SubPrgInclude.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\func\src\f_eeprom.c" Settings: "Debug"]
+Options="Compiler" -{-o1}
+
+["..\func\src\f_main.c" Settings: "Debug"]
+Options="Compiler" +{-g} -{-o1}
+
+["..\include_ti\2803x\DSP2803x_GlobalPrototypes.h" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["..\include_ti\2803x\DSP2803x_GlobalPrototypes.h" Settings: "Release"]
+ExcludeFromBuild=true
+
+["Debug\MD500E_C_F061M157F.map" Settings: "Debug"]
+ExcludeFromBuild=true
+
+["Debug\MD500E_C_F061M157F.map" Settings: "Release"]
+ExcludeFromBuild=true
+
+["..\05_public\common\DSP28035Peripheral.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["..\05_public\common\DSP28035Peripheral.cmd" Settings: "Release"]
+LinkOrder=1
+
+["..\05_public\common\F28035.cmd" Settings: "Debug"]
+LinkOrder=2
+
+["..\05_public\common\F28035.cmd" Settings: "Release"]
+LinkOrder=1
+

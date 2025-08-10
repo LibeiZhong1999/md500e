@@ -1,0 +1,14 @@
+
+!CONFIGURATION: 'com.ti.ccstudio.buildDefinitions.C2000.Debug.1094844900' [Sat Sep 28 11:22:50 CST 2019]
+
+	!TOOL: 'com.ti.ccstudio.buildDefinitions.C2000_18.1.exe.compilerDebug.69502945'
+
+		!WARNING: Unresolved option: com.ti.ccstudio.buildDefinitions.C2000_18.1.exe.compilerDebug.69502945::!--symdebug:dwarf
+
+
+!CONFIGURATION: 'com.ti.ccstudio.buildDefinitions.C2000.Release.46937743' [Sat Sep 28 11:22:50 CST 2019]
+
+	!TOOL: 'com.ti.ccstudio.buildDefinitions.C2000_18.1.exe.compilerRelease.1443859714'
+
+		!WARNING: Unresolved option: com.ti.ccstudio.buildDefinitions.C2000_18.1.exe.compilerRelease.1443859714::!--symdebug:dwarf
+

@@ -1,0 +1,13 @@
+Build Option设置：(Proj_dir)代表利用CCs建立的工程文件所在目录
+   Compiler：
+性能部分：
+
+-g -q -o3 -i"$(Proj_dir)\05_public\280_header" -i"$(Proj_dir)\05_public\motor_header" -i"$(Proj_dir)\05_public\function_header"  -d"_DEBUG" -d"CHIP_2808L" -d"LARGE_MODEL" -ml -mt -v28 -fr"$(Proj_dir)\05_public\obj\motor_obj"  
+
+功能部分：
+
+-g -q -o3 -i"$(Proj_dir)\05_public\280_header" -i"$(Proj_dir)\05_public\motor_header" -i"$(Proj_dir)\05_public\function_header"  -d"_DEBUG" -d"CHIP_2808L" -d"LARGE_MODEL" -ml -mt -v28 -fr"$(Proj_dir)\05_public\obj\function_obj"  
+
+   Linker：
+
+-q -c -m".\Debug\280X-DSP.map" -o".\Debug\280X-DSP.out" -stack0x400 -w -x
